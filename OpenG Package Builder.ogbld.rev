@@ -1,0 +1,16 @@
+[OpenG Package Builder.ogbld]
+Version=0.1.0alpha6
+Build_Number=78
+Build_Date="3/4/2007 7:39:13 PM"
+Status=OK
+Warnings=1
+Log_File="/D/Projects/OpenG/ogpb/built/OpenG Package Builder.log"
+
+[OpenG Package Builder API.ogbld]
+Version=0.1.0alpha6
+Build_Number=16
+Build_Date="3/4/2007 7:40:21 PM"
+Status=OK
+Warnings=0
+Log_File="/D/Projects/OpenG/ogpb/built/OpenG Package Builder API.log"
+

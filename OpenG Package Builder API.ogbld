@@ -1,0 +1,60 @@
+[General]
+File Format Version=1.0.1
+Project Root=built
+Source Root=..
+Build Root=api
+Namespace=ogpb_api
+Overwrite Existing Files=TRUE
+Log Dir=built
+Log File=""
+Log File Suffix=""
+Include Help Files=FALSE
+Help File Dir=../application/project
+Include Shared Libs=FALSE
+Shared Lib Dir="/C/Shared Projects/OpenG/Package Builder/built/project"
+Include External Subrs=FALSE
+External Subr Dir=../application/project
+Include Hidden VIs=FALSE
+EXE Icon File=""
+New Build Root=TRUE
+Unsaved Changes MsgBox=TRUE
+Ambiguous VIs Dest Dir=""
+Call Pre-Build VI=""
+Call Post-Build VI=""
+Revision File="../OpenG Package Builder.ogbld.rev"
+Version VI Name=""
+Version Ctrl Name=""
+Apply New Password=""
+RemovePolyVIsAndTypedefs=FALSE
+Allow CBVI & Build Hierarchy Overlap=FALSE
+Namespace Convention=0
+
+[Top Level VIs]
+
+[Dynamic VIs]
+DynVI 1="source/Dynamic API/OGPB API Build Package from Build File.vi"
+DynVI 2="source/Dynamic API/OGPB API Build Package from Spec.vi"
+DynVI 3="source/Dynamic API/OGPB API Read Build File.vi"
+DynVI 4="source/Dynamic API/OGPB API Write Build File.vi"
+DynVI 5="source/Dynamic API/OGPB Empty Spec Constant.vi"
+
+[Exclude Lib Dirs from Build]
+
+[Destination 1]
+Source Dir=""
+Target Dir=ogpb_api.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=TRUE
+Apply New Password=""
+Namespace=""
+
+[SupportFiles 1]
+TargetDir=""
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+Recursive=FALSE
+Exclude=FALSE
+SourceFile 1="source/Dynamic API/dir.mnu"
+

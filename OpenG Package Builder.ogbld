@@ -1,0 +1,78 @@
+[General]
+File Format Version=1.0.1
+Project Root=built
+Source Root=..
+Build Root=rsrc
+Namespace=ogpb
+Overwrite Existing Files=TRUE
+Log Dir=built
+Log File=""
+Log File Suffix=""
+Include Help Files=FALSE
+Help File Dir=../application/project
+Include Shared Libs=FALSE
+Shared Lib Dir="/C/Shared Projects/OpenG/Package Builder/built/project"
+Include External Subrs=FALSE
+External Subr Dir=../application/project
+Include Hidden VIs=FALSE
+EXE Icon File=""
+New Build Root=TRUE
+Unsaved Changes MsgBox=TRUE
+Ambiguous VIs Dest Dir=""
+Call Pre-Build VI=""
+Call Post-Build VI=""
+Revision File="../OpenG Package Builder.ogbld.rev"
+Version VI Name="OGPB GUI Current Version.vi"
+Version Ctrl Name="Version Info"
+Apply New Password=""
+RemovePolyVIsAndTypedefs=FALSE
+Allow CBVI & Build Hierarchy Overlap=FALSE
+Namespace Convention=0
+
+[Top Level VIs]
+VI 1=source/GUI/OpenG_Package_Builder.vi
+
+[Dynamic VIs]
+DynVI 1="source/Menu-Launch Stub/OpenG Package Builder.vi"
+DynVI 2="source/Static API/OGPB Build Package from Build File.vi"
+DynVI 3="source/Static API/OGPB Build Package from Spec.vi"
+DynVI 4="source/Static API/OGPB Read Build File.vi"
+DynVI 5="source/Static API/OGPB Write Build File.vi"
+
+[Exclude Lib Dirs from Build]
+
+[Destination 1]
+Source Dir=""
+Target Dir=ogpb.llb
+Convert Target to LLB=TRUE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=TRUE
+Apply New Password=""
+Namespace=""
+
+[Destination 2]
+Source Dir="source/Menu-Launch Stub"
+Target Dir=../project
+Convert Target to LLB=FALSE
+Convert Target to EXE=FALSE
+Save Level=0
+Default Destination=FALSE
+Apply New Password=""
+Namespace=<none>
+
+[SupportFiles 1]
+TargetDir=""
+OverwriteExisting=TRUE
+FollowVIDirHierarchy=FALSE
+Recursive=FALSE
+Exclude=FALSE
+SourceFile 1=source/GUI/ogpb.ini
+SourceFile 2=source/support/lvzip/*.dll
+SourceFile 3=source/support/lvzip/*.hqx
+SourceFile 4=source/support/lvzip/*.so
+
+[VI Property - OpenG_Package_Builder.vi]
+Save Level=-1
+Exec.RunOnOpen=True
+

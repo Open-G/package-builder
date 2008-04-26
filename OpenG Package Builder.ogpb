@@ -1,0 +1,77 @@
+[Package Name]
+Name=ogrsc_package_builder
+Version=0.1.0alpha6
+Release=1
+
+[Description]
+Description="OpenG Package Builder"
+Summary="OpenG Package Builder"
+License=LGPL
+Copyright="Konstantin Shifershteyn, James Kring 2004-2005"
+Distribution="OpenG Toolkit"
+Icon=ogpb.bmp
+Vendor=OpenG.org
+URL=http://www.openg.org
+Packager="Konstantin Shifershteyn <kostya@kshif.com>"
+
+[Platform]
+Exclusive_LabVIEW_Version=>=6.1
+Exclusive_LabVIEW_System=ALL
+Exclusive_OS=ALL
+
+[Script VIs]
+Source Dir=""
+PreInstall=""
+PostInstall=""
+PreUninstall=""
+PostUninstall=""
+Verify=""
+PreBuild=""
+PostBuild=""
+
+[Dependencies]
+AutoReqProv=FALSE
+Requires=""
+Conflicts=""
+
+[Files]
+Num File Groups=5
+
+[File Group 0]
+Source Dir=built/rsrc
+Target Dir="<resource>/OpenG/Package Builder"
+Replace Mode=Always
+Num Files=2
+File 0=ogpb.llb
+File 1=ogpb.ini
+
+[File Group 1]
+Source Dir=built/rsrc
+Target Dir="<resource>/OpenG/Package Builder"
+Replace Mode=Always
+Exclusive_OS="Windows NT,Windows 98,Windows 95"
+Num Files=1
+File 0=*.dll
+
+[File Group 2]
+Source Dir=built/rsrc
+Target Dir="<resource>/OpenG/Package Builder"
+Replace Mode=Always
+Exclusive_OS="Mac OS"
+Num Files=1
+File 0=*.so
+
+[File Group 3]
+Source Dir=built/project
+Target Dir=<project>
+Replace Mode=Always
+Num Files=1
+File 0="OpenG Package Builder.vi"
+
+[File Group 4]
+Source Dir=built/api
+Target Dir=<OpenG.lib>/ogpb_api
+Replace Mode=Always
+Num Files=1
+File 0=*.*
+
